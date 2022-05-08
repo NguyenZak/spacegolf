@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
+    --transitionNormal: 0.3s all ease-out 0s;
+    --colorWhite15: hsla(0, 0%, 100%, 0.15);
     --color3E: #3e4048;
     --color8E: #8e8dab;
     --primary-color: #061738;
@@ -173,7 +175,7 @@ h2 {
 .h3,
 h3 {
     font-size: 1.7rem;
-    line-height: 2.4rem
+    line-height: 1.5rem
 }
 
 @media only screen and (min-width:768px) {
@@ -1503,6 +1505,7 @@ hr {
 }
 
 .section__heading--maintitle {
+    display: flex;
     position: relative;
     padding-bottom: 1rem
 }
@@ -1510,7 +1513,7 @@ hr {
 .section__heading--maintitle::before {
     position: absolute;
     content: "";
-    background: url(../img/other/heading-shape.png);
+    /* background: url(../img/other/heading-shape.png); */
     width: 174px;
     height: 5px;
     bottom: 0;
@@ -1698,7 +1701,9 @@ select {
 }
 
 .text-center {
-    text-align: center
+    display: flex;
+    justify-content: space-between;
+    text-align: left
 }
 
 .text-left {
@@ -4432,7 +4437,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product__items--content__subtitle {
     font-size: 1.1rem;
-    line-height: 2.2rem;
+    line-height: 1.5rem;
     color: var(--text-gray-color)
 }
 
@@ -5170,24 +5175,28 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .deals__banner--countdown {
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 @media only screen and (min-width:992px) {
     .deals__banner--countdown {
-        margin-bottom: 2.5rem
+        margin-bottom: 2.5rem;
+        margin-left: 2rem;
     }
 }
 
 @media only screen and (min-width:1200px) {
     .deals__banner--countdown {
-        margin-bottom: 3rem
+        margin-bottom: 2rem;
+        margin-left: 2rem;
     }
 }
 
 @media only screen and (min-width:1600px) {
     .deals__banner--countdown {
-        margin-bottom: 4rem
+        margin-bottom: 1rem;
+        margin-left: 2rem;
     }
 }
 
@@ -5200,8 +5209,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .deals__banner--countdown .countdown__item {
-    width: 6rem;
-    height: 6rem;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
     background: #efeff1;
     margin-right: 3rem;
@@ -5215,45 +5224,45 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-shadow: 0 0 59px rgba(0, 0, 0, .19);
-    box-shadow: 0 0 59px rgba(0, 0, 0, .19);
+    /* -webkit-box-shadow: 0 0 59px rgba(0, 0, 0, .19);
+    box-shadow: 0 0 59px rgba(0, 0, 0, .19); */
     position: relative;
     border-radius: .5rem
 }
 
 @media only screen and (min-width:768px) {
     .deals__banner--countdown .countdown__item {
-        width: 6rem;
-        height: 6rem
+        width: 3em;
+        height: 3rem
     }
 }
 
 @media only screen and (min-width:992px) {
     .deals__banner--countdown .countdown__item {
-        width: 8rem;
-        height: 7rem;
+        width: 3rem;
+        height: 3rem;
         margin-right: 4rem
     }
 }
 
 @media only screen and (min-width:1200px) {
     .deals__banner--countdown .countdown__item {
-        width: 8.5rem;
-        height: 7.5rem
+        width: 3rem;
+        height: 3rem
     }
 }
 
 @media only screen and (min-width:1366px) {
     .deals__banner--countdown .countdown__item {
-        width: 9rem;
-        height: 8rem
+        width: 3rem;
+        height: 3rem
     }
 }
 
 @media only screen and (min-width:1600px) {
     .deals__banner--countdown .countdown__item {
-        width: 10.5rem;
-        height: 9rem
+        width: 4rem;
+        height: 4rem
     }
 }
 
@@ -5274,7 +5283,7 @@ input[type=number]::-webkit-outer-spin-button {
     content: ":";
     right: -2.2rem;
     top: 50%;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     -webkit-transform: translatey(-50%);
     transform: translatey(-50%)
@@ -5304,7 +5313,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2rem;
-    margin-bottom: .3rem
+    margin-bottom: .2rem
 }
 
 @media only screen and (min-width:768px) {
@@ -5316,29 +5325,29 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (min-width:992px) {
     .deals__banner--countdown .countdown__number {
-        font-size: 2.5rem;
-        line-height: 2.8rem
+        font-size: 2rem;
+        line-height: 2rem
     }
 }
 
 @media only screen and (min-width:1200px) {
     .deals__banner--countdown .countdown__number {
-        font-size: 2.8rem;
-        line-height: 3rem
+        font-size: 2rem;
+        line-height: 2rem
     }
 }
 
 @media only screen and (min-width:1366px) {
     .deals__banner--countdown .countdown__number {
-        font-size: 3rem;
-        line-height: 3.2rem
+        font-size: 2rem;
+        line-height: 2rem
     }
 }
 
 @media only screen and (min-width:1600px) {
     .deals__banner--countdown .countdown__number {
-        font-size: 3.5rem;
-        line-height: 4rem
+        font-size: 2rem;
+        line-height: 2rem
     }
 }
 
@@ -12866,4 +12875,78 @@ details>summary::-webkit-details-marker {
     max-width: 1525px;
     margin: 0 auto 10px;
     padding: 0px;
+}
+
+.more-button {
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color3E);
+    font-size: 1.4rem;
+}
+
+.add__cart {
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    border: 1px solid rgb(62, 64, 72);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center
+}
+
+.add__cart--content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 90;
+}
+
+.add__cart--content-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.8px;
+    height: 12.8px;
+    margin: 0px 11px 1px 0px;
+    min-width: 17px;
+    color: rgb(62, 64, 72);
+}
+
+.add__cart--content-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.add__cart--style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--colorWhite15);
+    transition: var(--transitionNormal);
+}
+
+.add__cart--style:hover {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
 }

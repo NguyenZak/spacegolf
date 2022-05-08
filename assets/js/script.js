@@ -262,7 +262,7 @@ tab(".product__tab--one"),
     tab(".product__grid--column__buttons"),
     document.querySelectorAll("[data-countdown]").forEach(function(elem) {
         const countDownItem = function(value, label) {
-                return `<div class="countdown__item" ${label}"><span class="countdown__number">${value}</span><p class="countdown__text">${label}</p></div>`;
+                return `<div class="countdown__item style="color:#000000"" ${label}"><span class="countdown__number">${value}</span><p class="countdown__text">${label}</p></div>`;
             },
             date = new Date(elem.getAttribute("data-countdown")).getTime(),
             second = 1e3,
@@ -277,10 +277,10 @@ tab(".product__tab--one"),
                     minutesValue = Math.floor((timeDistance % 36e5) / 6e4),
                     secondsValue = Math.floor((timeDistance % 6e4) / 1e3);
                 (elem.innerHTML =
-                    countDownItem(daysValue, "days") +
-                    countDownItem(hoursValue, "hrs") +
-                    countDownItem(minutesValue, "mins") +
-                    countDownItem(secondsValue, "secs")),
+                    // countDownItem(daysValue, "") +
+                    countDownItem(hoursValue, "") +
+                    countDownItem(minutesValue, "") +
+                    countDownItem(secondsValue, "")),
                 timeDistance < 0 && clearInterval(countDownInterval);
             }, 1e3);
     });
