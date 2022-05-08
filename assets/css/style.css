@@ -2536,7 +2536,7 @@ body.overlay__active::before {
     background: var(--white-color);
     line-height: 3.8rem;
     border-radius: 50%;
-    color: var(--white-color)
+    color: var(--color8E)
 }
 
 .offcanvas__stikcy--toolbar__icon svg {
