@@ -81,7 +81,7 @@ scrollTop &&
         }));
 var swiper = new Swiper(".hero__slider--activation", {
         slidesPerView: 1,
-        loop: !0,
+        loop: !1,
         clickable: !0,
         speed: 800,
         spaceBetween: 30,
@@ -96,6 +96,7 @@ var swiper = new Swiper(".hero__slider--activation", {
         loop: !0,
         clickable: !0,
         spaceBetween: 30,
+        autoplay: { delay: 3e3, disableOnInteraction: !1 },
         breakpoints: {
             1200: { slidesPerView: 5 },
             992: { slidesPerView: 4 },
@@ -262,7 +263,7 @@ tab(".product__tab--one"),
     tab(".product__grid--column__buttons"),
     document.querySelectorAll("[data-countdown]").forEach(function(elem) {
         const countDownItem = function(value, label) {
-                return `<div class="countdown__item style="color:#000000"" ${label}"><span class="countdown__number">${value}</span><p class="countdown__text">${label}</p></div>`;
+                return `<div class="countdown__item" ${label}"><span class="countdown__number">${value}</span><p class="countdown__text">${label}</p></div>`;
             },
             date = new Date(elem.getAttribute("data-countdown")).getTime(),
             second = 1e3,
