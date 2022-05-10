@@ -2933,7 +2933,7 @@ body.overlay__active::before {
 }
 
 .main__logo--img {
-    max-width: 120px
+    max-width: 85px
 }
 
 @media only screen and (min-width:480px) {
@@ -2944,7 +2944,8 @@ body.overlay__active::before {
 
 @media only screen and (min-width:768px) {
     .main__logo--img {
-        max-width: 100%
+        max-width: 100%;
+        width: 100px;
     }
 }
 
@@ -3877,7 +3878,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .home1__slider--bg {
-    background: url(../img/slider/home1-slider1.png);
+    background: url(https://cafefcdn.com/203337114487263232/2022/3/23/golf-1648010075635370478861.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -3891,7 +3892,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .home1__slider--bg.two {
-    background: url(../img/slider/home1-slider2.png);
+    background: url(https://ictvietnam.mediacdn.vn/162041676108402688/2021/4/6/albumgolfnews1-1617688393028-16176883931452124762906.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -3905,7 +3906,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .home1__slider--bg.three {
-    background: url(../img/slider/home1-slider3.png);
+    background: url(https://image.vtc.vn/resize/Da9xKKWytSqlRaOfIXm_yt9GpM5msjqX0/upload/2022/03/22/golf-07545021.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;

@@ -81,7 +81,7 @@ scrollTop &&
         }));
 var swiper = new Swiper(".hero__slider--activation", {
         slidesPerView: 1,
-        loop: !1,
+        loop: !2,
         clickable: !0,
         speed: 800,
         spaceBetween: 30,
@@ -92,8 +92,8 @@ var swiper = new Swiper(".hero__slider--activation", {
         },
     }),
     swiper = new Swiper(".product__swiper--activation", {
-        slidesPerView: 10,
-        loop: !0,
+        slidesPerView: 5,
+        loop: !1,
         clickable: !0,
         spaceBetween: 30,
         autoplay: { delay: 3e3, disableOnInteraction: !1 },
@@ -110,7 +110,7 @@ var swiper = new Swiper(".hero__slider--activation", {
         },
     }),
     swiper = new Swiper(".product__swiper--column4__activation", {
-        slidesPerView: 4,
+        slidesPerView: 10,
         loop: !0,
         clickable: !0,
         spaceBetween: 30,
