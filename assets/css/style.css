@@ -1699,8 +1699,7 @@ select {
 
 #scroll__top svg {
     width: 25px;
-    text-align: center;
-    align-items: center;
+    display: initial;
     line-height: 1
 }
 
