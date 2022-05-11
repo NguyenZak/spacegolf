@@ -13216,11 +13216,11 @@
         display: block;
         position: relative;
         z-index: 3;
-        background: url(https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png) 0 0 no-repeat;
+        background: url(https://www.e-mailit.com/social-buttons/build/images/solutions/zalo-icon.png) 0 0 no-repeat;
         background-size: auto;
         background-size: cover;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     
     .zs-ico.zs-has-notify em {
@@ -13242,8 +13242,8 @@
     .zs-ico.zs-has-notify em::after,
     .zs-ico.zs-has-notify em::before {
         position: absolute;
-        left: -12px;
-        top: 0px;
+        left: -16px;
+        top: -6px;
         content: "";
         width: 50px;
         height: 50px;
@@ -13262,14 +13262,4 @@
         -webkit-animation-timing-function: linear;
         -moz-animation-timing-function: linear;
         animation-timing-function: linear;
-    }
-    
-    .zalo-chat-widget {
-        display: block;
-        position: relative;
-        z-index: 12;
-        cursor: pointer;
-        position: fixed;
-        Right: 18px;
-        bottom: 134px;
     }
