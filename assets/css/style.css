@@ -1660,6 +1660,8 @@ select {
 }
 
 #scroll__top {
+    align-items: center;
+    text-align: center;
     position: fixed;
     bottom: 80px;
     right: 25px;
