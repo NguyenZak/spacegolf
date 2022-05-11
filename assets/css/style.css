@@ -13222,7 +13222,8 @@
         width: 60px;
         height: 60px;
     }
-    /* .zs-ico.zs-has-notify em {
+    
+    .zs-ico.zs-has-notify em {
         position: absolute;
         top: 7px;
         left: 17px;
@@ -13271,4 +13272,4 @@
         position: fixed;
         Right: 18px;
         bottom: 134px;
-    } */
+    }
